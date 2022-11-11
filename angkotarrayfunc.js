@@ -27,7 +27,8 @@ var hapusPenumpang = function (namaPenumpang, penumpang) {
     } else {
       if (penumpang[i] == namaPenumpang) {
         penumpang[i] = undefined;
-      } else if (penumpang[i] !== namaPenumpang) {
+        return penumpang;
+      } else if (i == namaPenumpang - 1) {
         console.log(namaPenumpang + "tidak ada nama tersebut");
         return penumpang;
       }
