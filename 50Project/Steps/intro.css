@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  cursor: pointer;
+  display: flex;
+  background-color: black;
+}
+.container {
+  text-align: center;
+}
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 30px;
+  max-width: 100%;
+  width: 350px;
+}
+.progress-container::before {
+  content: "";
+  background-color: rgb(121, 107, 107);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  z-index: -1;
+}
+.progress {
+  content: "";
+  background-color: rgb(69, 77, 189);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 0%;
+  z-index: -1;
+  transition: 0.4s ease;
+}
+.circle {
+  background-color: rgb(211, 236, 229);
+  color: rgb(92, 105, 102);
+  display: flex;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+  border: 3px solid rgb(121, 107, 107);
+  transition: 1s ease;
+}
+.circle.active {
+  border-color: rgb(15, 96, 202);
+  color: rgb(69, 77, 189);
+}
+
+.btn {
+  cursor: pointer;
+  background-color: rgb(69, 77, 189);
+  border-radius: 5px;
+  border: 0;
+  padding: 8px 30px;
+  margin: 5px;
+  color: white;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus {
+  outline: 0;
+}
+.btn:disabled {
+  background-color: rgb(121, 107, 107);
+  cursor: not-allowed;
+}

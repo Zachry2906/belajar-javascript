@@ -25,40 +25,40 @@
 
 // FUNCTION 2 : REKURSIF
 
-// function cetakAngka(n) {
-//   if (n === 0) {
-//     return;
-//   } else {
-//     console.log(n);
-//     return cetakAngka(n - 1);
-//   }
-// }
+function cetakAngka(n) {
+  if (n === 0) {
+    return;
+  } else {
+    console.log(n);
+    return cetakAngka(n - 1);
+  }
+}
 
-// cetakAngka(Number(prompt("Masukkan nilai n :")));
+cetakAngka(Number(prompt("Masukkan nilai n :")));
 
 //function 3 : Rekursif loopiping DEKLARASI
 
-// function faktorial(n) {
-//   if (n === 0) {
-//     return 1;
-//   } else {
-//     return n * faktorial(n - 1);
-//   }
-// }
+function faktorial(n) {
+  if (n === 0) {
+    return 1;
+  } else {
+    return n * faktorial(n - 1);
+  }
+}
 
 // alert("hasilnya adalah " + faktorial(Number(prompt("Masukkan nilai n :"))));
 
 // FUNCTION 3.1 : REKRUSIF LOOP EXPRESIONAL
 
-// var faktorial = function (n) {
-//   if (n === 0) {
-//     return 1;
-//   } else {
-//     return n * faktorial(n - 1);
-//   }
-// };
+var faktorial = function (n) {
+  if (n === 0) {
+    return 1;
+  } else {
+    return n * faktorial(n - 1);
+  }
+};
 
-// alert("hasilnya adalah " + faktorial(Number(prompt("Masukkan nilai n :"))));
+alert("hasilnya adalah " + faktorial(Number(prompt("Masukkan nilai n :"))));
 
 //FUNCSION 4 : EXXPRESION LOOP ARRAY
 var tambah = function () {
