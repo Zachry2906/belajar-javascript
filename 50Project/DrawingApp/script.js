@@ -51,10 +51,9 @@ warna.addEventListener("input", function(){
     }
 })
 
-// clear.addEventListener('click', function(){
-//     console.log(drawLine());
-//     console.log(drawCircle());
-// })
+clear.addEventListener('click', function(){
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+})
 
 hapus.addEventListener('click', function(){
     hapus.classList.toggle('active')
@@ -65,6 +64,12 @@ hapus.addEventListener('click', function(){
     }
 })
 
+ukuran.addEventListener('click', function(){
+    size = prompt('Masukan Ukuran Yang Mau Dipakai')
+    ukuran.innerText = size
+})
+
+
 decrease.addEventListener('click', function(){
     size--
     ukuran.innerText = size
@@ -74,6 +79,8 @@ increase.addEventListener('click', function(){
     size++
     ukuran.innerText = size
 })
+
+
 
 function drawCircle(x, y){
     ctx.beginPath();
