@@ -26,12 +26,10 @@ body {
   box-shadow: 0 0 2px #000;
   height: 16px;
   width: 16px;
-  margin: 2px;
-  transition: 2s ease;
-  border-radius: 2px;
+  margin: 0.5px;
+  transition: 5s ease;
 }
 
 .square:hover {
   transition-duration: 0s;
-  transition-delay: 1s;
 }

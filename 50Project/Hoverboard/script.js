@@ -6,8 +6,6 @@ for(let i = 0; i < X; i++){
     const square = document.createElement('div')
     square.classList.add('square')
 
-    const speed = 0.1
-    square.style.transition = `all ${speed}s`
     square.addEventListener('mouseover', function(){
         setColor(square)})
 
@@ -21,7 +19,7 @@ for(let i = 0; i < X; i++){
 function setColor(element){
     const color = getRandomColor()
     element.style.background = color
-    element.style.boxShadow = `0 0 10px ${color}, 0 0 15px ${color}`
+    element.style.boxShadow = `0 0 2px ${color}, 0 0 10px ${color}`
 }
 
 function removeColor(element){
