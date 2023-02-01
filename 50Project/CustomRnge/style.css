@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trueno", Times, serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+.testimonial-container {
+  background-color: #476ce4;
+  color: white;
+  margin: 20px auto;
+  padding: 50px 80px;
+  min-width: 768px;
+  border-radius: 15px;
+  position: relative;
+}
