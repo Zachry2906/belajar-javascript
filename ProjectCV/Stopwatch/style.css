@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    font-family: Trueno;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-color: brown;
+}
+
+.container {
+    border: brown 1px solid;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: pink;
+    color: brown;
+}
+
+button {
+    padding: 10px 40px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+    border: brown solid 0.5px;
+    color: brown;
+    transition: 1s ease;
+}
